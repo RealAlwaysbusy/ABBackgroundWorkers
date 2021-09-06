@@ -1,0 +1,17 @@
+
+Sub Class_Globals
+	Private Timer As Timer
+	Private TimerTickMs as Int = 10000
+End Sub
+
+Public Sub Initialize
+	Timer.Initialize("Timer", TimerTickMs)
+	Timer.Enabled = True
+	
+	StartMessageLoop '<- don't forget!
+End Sub
+
+Sub Timer_Tick
+	'do the work required
+	
+End Sub
